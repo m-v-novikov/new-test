@@ -96,17 +96,48 @@ html
             div.best-products-swiper-prev
             div.best-products-swiper-next
             div.swiper-wrapper
-              div.product-card.swiper-slide
-                img src='./img/product-phone-img.jpg'
-                div.description
-                  p Защитная пленка PURO для Apple iPhone 6 5.5" глянцевая
-                p.vendor Артикул SDIPHONE655
-                div.price
-                  span.new
-                  span.old
-                div.buying
-                  span.length data-value='1' 1
-                  a href='#' Купить
+              - for item in [0, 1, 2, 3, 4, 5, 6]
+                div.product-card.swiper-slide
+                  img src='./img/product-phone-img.jpg'
+                  div.description
+                    p Защитная пленка PURO для Apple iPhone 6 5.5" глянцевая
+                  p.vendor Артикул SDIPHONE655
+                  div.price.clearfix
+                    span.new
+                      b 650
+                      | руб.
+                    span.old 1050
+                  div.buying.clearfix
+                    p.length
+                      span.minus-but
+                      span.num data-value='1' 1
+                      span.plus-but
+                    a href='#' Купить
+
+          h3 Новинки:
+          div.new-products.swiper-container
+            div.new-products-swiper-prev
+            div.new-products-swiper-next
+            div.swiper-wrapper
+              - for item in [0, 1, 2, 3, 4, 5, 6]
+                div.product-card.swiper-slide
+                  img src='./img/product-phone-img.jpg'
+                  div.description
+                    p Защитная пленка PURO для Apple iPhone 6 5.5" глянцевая
+                  p.vendor Артикул SDIPHONE655
+                  div.price.clearfix
+                    span.new
+                      b 650
+                      | руб.
+                    span.old 1050
+                  div.buying.clearfix
+                    p.length
+                      span.minus-but
+                      span.num data-value='1' 1
+                      span.plus-but
+                    a href='#' Купить
+
+          h3 Брэнды:
 
 
         aside.right-side-col

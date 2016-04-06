@@ -90,9 +90,159 @@
   float: left;
   width: 80%;
   h3{font-size: 20px; margin-bottom: 30px; padding-left: 0;}
+  .swiper-container{
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-wrapper{
+    white-space: nowrap;
+  }
+  .best-products{
+    margin-bottom: 50px;
+    .best-products-swiper-prev{
+      @include sprite($spritesheet, 'left-semi-circle-arrow');
+      position: absolute;
+      left: 0; top: 50%;
+      z-index: 3;
+      cursor: pointer;
+    }
+    .best-products-swiper-next{
+      @include sprite($spritesheet, 'right-semi-circle-arrow');
+      position: absolute;
+      right: 0; top: 50%;
+      z-index: 3;
+      cursor: pointer;
+    }
+  }
+  .new-products{
+    margin-bottom: 50px;
+    .new-products-swiper-prev{
+      @include sprite($spritesheet, 'left-semi-circle-arrow');
+      position: absolute;
+      left: 0; top: 50%;
+      z-index: 3;
+      cursor: pointer;
+    }
+    .new-products-swiper-next{
+      @include sprite($spritesheet, 'right-semi-circle-arrow');
+      position: absolute;
+      right: 0; top: 50%;
+      z-index: 3;
+      cursor: pointer;
+    }
+  }
   .product-card{
     background: #f5f5f5;
     padding: 10px;
     width: 22%;
+    display: inline-block;
+    margin-right: 1%;
+    white-space: normal;
+    .description{
+      font-size: 13px;
+      font-weight: bold;
+      height: 30px;
+      margin: 20px 0 20px 20px;
+    }
+    .vendor{
+      color: #a6a6a6;
+      font-size: 12px;
+      margin: 0 0 20px 20px;
+    }
+    .price{
+      padding-left: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      position: relative;
+      .new{
+        float: left;
+        b{font-size: 20px;}
+      }
+      .old{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-decoration: line-through;
+      }
+    }
+    .buying{
+      p{
+        display: block;
+        float: left;
+        padding: 0 20px;
+        margin-left: 20px;
+        height: 30px;
+        position: relative;
+        background: #d4d4d4;
+        @include linearGradient(#dfdfdf, #cfcfcf);
+        @include border-radius(5px);
+        .num{
+          background: #ffffff;
+          line-height: 30px;
+          padding: 0 10px;
+          height: 28px;
+          border: 1px solid #cecece;
+          z-index: 2;
+          display: inline-block;
+        }
+        .minus-but{
+          display: block;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 20px;
+          text-align: center;
+          cursor: pointer;
+          &:before{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            @include sprite($spritesheet, 'minus-button-icon');
+          }
+          &:after{
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        .plus-but{
+          display: block;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 20px;
+          text-align: center;
+          cursor: pointer;
+          &:before{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            @include sprite($spritesheet, 'plus-button-icon');
+          }
+          &:after{
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+      a{
+        display: block;
+        float: right;
+        font-size: 12px;
+        padding: 0px 30px;
+        height: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        background: #5e5e5e;
+        @include linearGradient(#616161, #3c3c3c);
+        @include border-radius(5px);
+      }
+    }
   }
 }
