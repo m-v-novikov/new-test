@@ -1,0 +1,53 @@
+footer{
+  background: #373737;
+  padding: 25px 0;
+  color: #c5c5c5;
+  font-size: 12px;
+  .left-col{
+    float: left;
+    span{padding: 0 5px;}
+    a{color: #c5c5c5;}
+    .we-are{
+      padding: 10px 0;
+      a{text-decoration: underline;}
+    }
+    .payment{
+      span{
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0;
+        margin-right: 20px;
+      }
+      .p-pal{
+        @include sprite($spritesheet, 'p-pal-icon');
+      }
+      .visa{
+        @include sprite($spritesheet, 'visa-icon');
+      }
+      .master-card{
+        @include sprite($spritesheet, 'master-card-icon');
+      }
+      .robocassa{
+        @include sprite($spritesheet, 'robokasa-icon');
+      }
+      .sber{
+        @include sprite($spritesheet, 'sber-icon');
+      }
+      .ya-money{
+        @include sprite($spritesheet, 'ya-money-icon');
+      }
+      .web-money{
+        @include sprite($spritesheet, 'web-money-icon');
+      }
+    }
+  }
+  .right-col{
+    float: right;
+    text-align: right;
+    .address{
+      margin-top: 10px;
+    }
+    a{color: #c5c5c5;}
+    span{padding: 0 5px;}
+  }
+}
