@@ -45,6 +45,85 @@ a {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px), screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  header .top-main-block .our-phone {
+    font-size: 14px;
+  }
+  header .top-main-block .our-phone .bold {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  header .top-main-block .our-phone .order-free-call {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+
+  main .main-content .product-card {
+    padding: 10px;
+    width: 29.5%;
+  }
+  main .main-content .product-card .description {
+    font-size: 12px;
+    margin: 15px 0 15px 15px;
+  }
+  main .main-content .product-card .vendor {
+    font-size: 12px;
+    margin: 15px 0 15px 15px;
+  }
+  main .main-content .product-card .price {
+    font-size: 12px;
+    padding-left: 15px;
+  }
+  main .main-content .product-card .price .new b {
+    font-size: 14px;
+  }
+  main .main-content .product-card .buying p {
+    margin-left: 15px;
+  }
+  main .main-content .product-card .buying a {
+    padding: 0px 15px;
+    text-transform: uppercase;
+  }
+  main .main-content .brands-block {
+    margin-right: -1.2%;
+  }
+  main .main-content .brands-block .brand {
+    width: 23.5%;
+    margin-right: 1.2%;
+  }
+  main .main-content .campaigns-block .campaign .link-title {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px), screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  header .top-main-block .our-phone {
+    font-size: 14px;
+  }
+  header .top-main-block .our-phone .bold {
+    font-size: 18px;
+  }
+  header .top-main-block .our-phone .order-free-call {
+    font-size: 12px;
+  }
+
+  main .main-content .product-card {
+    padding: 10px;
+    width: 21.8%;
+    margin-right: 1.1%;
+  }
+  main .main-content .product-card .description {
+    font-size: 12px;
+    height: 30px;
+    margin: 10px 0 10px 10px;
+  }
+  main .main-content .brands-block {
+    margin-right: -1.2%;
+  }
+  main .main-content .brands-block .brand {
+    width: 23.5%;
+    margin-right: 1.2%;
+  }
+}
 .top-panel {
   background: #373737;
 }
@@ -431,7 +510,7 @@ a {
   white-space: normal;
 }
 .main-content .product-card img {
-  max-width: 100%;
+  width: 100%;
 }
 .main-content .product-card .description {
   font-size: 13px;
@@ -581,10 +660,11 @@ a {
 }
 .main-content .brands-block {
   margin-bottom: 50px;
+  margin-right: -1%;
 }
 .main-content .brands-block .brand {
   border: 1px solid #dcdcdc;
-  width: 15.5%;
+  width: 15.4%;
   margin-right: 1%;
   margin-bottom: 1%;
   text-align: center;
@@ -613,6 +693,10 @@ a {
   width: 31.5%;
   margin-right: 2.5%;
   display: inline-block;
+  vertical-align: top;
+}
+.main-content .campaigns-block .campaign img {
+  width: 100%;
 }
 .main-content .campaigns-block .campaign .link-title {
   color: #373737;

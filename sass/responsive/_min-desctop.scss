@@ -1,0 +1,39 @@
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max),
+screen and (min-device-width: $screen-md-min) and (max-device-width: $screen-md-max) {
+  //body{border:2px solid green;}
+  header{
+    .top-main-block{
+      .our-phone{
+        font-size: 14px;
+        .bold{
+          font-size: 18px;
+        }
+        .order-free-call{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  main{
+    .main-content {
+      .product-card{
+        padding: 10px;
+        width: 21.8%;
+        margin-right: 1.1%;
+        .description{
+          font-size: 12px;
+          height: 30px;
+          margin: 10px 0 10px 10px;
+        }
+      }
+      .brands-block {
+        margin-right: -1.2%;
+        .brand{
+          width: 23.5%;
+          margin-right: 1.2%;
+        }
+      }
+    }
+  }
+}

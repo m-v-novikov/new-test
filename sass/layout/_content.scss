@@ -139,7 +139,7 @@
     margin-right: 1%;
     white-space: normal;
     img{
-      max-width: 100%;
+      width: 100%;
     }
     .description{
       font-size: 13px;
@@ -251,9 +251,10 @@
 
   .brands-block{
     margin-bottom: 50px;
+    margin-right: -1%;
     .brand{
       border: 1px solid #dcdcdc;
-      width: 15.5%;
+      width: 15.4%;
       margin-right: 1%;
       margin-bottom: 1%;
       text-align: center;
@@ -276,12 +277,15 @@
       }
     }
   }
+
   .campaigns-block{
     margin-bottom: 50px;
     .campaign{
       width: 31.5%;
       margin-right: 2.5%;
       display: inline-block;
+      vertical-align: top;
+      img{width: 100%}
       .link-title{
         color: #373737;
         padding-bottom: 1px;
